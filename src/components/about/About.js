@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm a 21 year-old, South African, Frontend and Blockchain Engineer with a strong passion for developing websites with great user experiences. I currently work as a Software and Support Engineer at a Telecommunications company. I studied Mechanical Engineering and Computer Engineering at the University of Kwa-Zulu-Natal but dropped out of Computer Engineering to persue my passion in programming and fell in love with Web Dev. My goal as a Frontend Engineer is to create high performant, interactive websites that are extremely unique`;
+  const aboutme = `I'm a 21 year-old, South African, Software, AI and Machine Learning Engineer with a strong passion for developing websites with great user experiences. I currently work as a Software and Support Engineer at a Telecommunications company. I studied Mechanical Engineering and Computer Engineering at the University of Kwa-Zulu-Natal but dropped out of Computer Engineering to persue my passion in programming and fell in love with Web Dev. My goal as a Frontend Engineer is to create high performant, interactive websites that are extremely unique`;
 
   return (
     <section id="about">

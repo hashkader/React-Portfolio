@@ -12,6 +12,7 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
+import HolographicCards from '../holographicCard/HolographicCards';
 
 
 const useStyles = makeStyles(() => ({
@@ -41,7 +42,7 @@ export const Home = () => {
         <Resume />
       </div>
       <SideNavbar />
-      <Works />
+      <HolographicCards/>
       <About />
       <Contact />
     </>

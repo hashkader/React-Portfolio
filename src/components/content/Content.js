@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import Resume from "../../settings/resume.json";
 import { FirstName, LastName } from "../../utils/getName";
+import './Content.css'
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     "@media (max-width: 768px)": {
       marginLeft: theme.spacing(10),
     },
+    display: theme
   },
   jobs: {
     "@media (max-width: 768px)": {
@@ -29,7 +31,7 @@ export const Content = () => {
 
   return (
     <Container component="main" className={classes.main} maxWidth="md">
-      <div className={classes.heading}>
+      <div className="container">
         <Typography variant="h5" component="h2">
             <TextDecrypt text={`${FirstName} ${LastName}`} />
         </Typography>
@@ -38,6 +40,7 @@ export const Content = () => {
             <TextDecrypt text={`${Resume.basics.job2}`} />
         </Typography>
       </div>
+    
     </Container>
   );
 };
