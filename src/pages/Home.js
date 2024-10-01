@@ -13,6 +13,8 @@ import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
 import HolographicCards from '../holographicCard/HolographicCards';
+import { ThemeContext } from '../components/theme/ThemeProvider';
+import { useContext } from 'react';
 
 
 const useStyles = makeStyles(() => ({
@@ -25,7 +27,8 @@ const useStyles = makeStyles(() => ({
 
 export const Home = () => {
   const classes = useStyles();
-
+  const test = useContext(ThemeContext)
+  console.log(test)
   return (
     <>
       <div className={classes.root} id="home">
