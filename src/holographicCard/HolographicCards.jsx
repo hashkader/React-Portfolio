@@ -20,11 +20,11 @@ const HolographicCards = () => {
       });
     });
 
-    return () => {
-      tiltElementsRef.current.forEach((tiltElement) => {
-        tiltElement.vanillaTilt.destroy();
-      });
-    };
+    // return () => {
+    //   tiltElementsRef.current.forEach((tiltElement) => {
+    //     tiltElement.vanillaTilt.destroy();
+    //   });
+    // };
   }, []);
 
   return (
@@ -34,9 +34,38 @@ const HolographicCards = () => {
             className="card" 
             ref={el => tiltElementsRef.current[0] = el}
           >
+            <div className='image'>
+              <img src="" alt="" />
+            </div>
+            <div className="card-content">
+              <h2 style={{color:"#116885", fontSize:"32px"}}>Adbex</h2>
+            </div>
+          </div>
+          <div 
+            className="card" 
+            ref={el => tiltElementsRef.current[1] = el}
+          >
             <div className="card-background"></div>
             <div className="card-content">
-              <h2>Adbex</h2>
+              <h2 style={{color:"#116885", fontSize:"32px"}}>Woolies</h2>
+            </div>
+          </div>
+          <div 
+            className="card" 
+            ref={el => tiltElementsRef.current[2] = el}
+          >
+            <div className="card-background"></div>
+            <div className="card-content">
+              <h2 style={{color:"#116885", fontSize:"32px"}}>Sanlam</h2>
+            </div>
+          </div>
+          <div 
+            className="card" 
+            ref={el => tiltElementsRef.current[3] = el}
+          >
+            <div className="card-background"></div>
+            <div className="card-content">
+              <h2 style={{color:"#116885", fontSize:"32px"}}>Poes</h2>
             </div>
           </div>
         </div>

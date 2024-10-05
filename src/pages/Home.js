@@ -27,8 +27,9 @@ const useStyles = makeStyles(() => ({
 
 export const Home = () => {
   const classes = useStyles();
-  const test = useContext(ThemeContext)
-  console.log(test)
+  const getTheme = useContext(ThemeContext)
+  const theme = getTheme.theme
+  console.log(theme)
   return (
     <>
       <div className={classes.root} id="home">
@@ -45,7 +46,11 @@ export const Home = () => {
         <Resume />
       </div>
       <SideNavbar />
-      <HolographicCards/>
+      {theme === 'light' ? (
+        <HolographicCards />
+      ) : (
+        <p>hello</p>
+      )}
       <About />
       <Contact />
     </>

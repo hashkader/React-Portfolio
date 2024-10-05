@@ -14,9 +14,10 @@
   
   h2 {
     font-size: clamp(2vw, 4.25rem, 7vw);
+    /* color: #116885; */
     line-height: 1.25;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 800
   }
   
   body {
@@ -31,14 +32,17 @@
   
   #grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
   #grid .card {
     --angle: 0deg;
-    width: 500px;
+    width: 250px;
+    height: 350px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     aspect-ratio: 1/1;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
@@ -51,7 +55,9 @@
 
   #grid .card:hover {
     box-shadow: 0 0.25rem 2.5rem rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.4); 
+    background-color: rgba(255, 255, 255, 0.6); 
+    transition: 500ms ;
+    opacity: 1;
   }
   #grid .card::after {
     content: "";
@@ -72,18 +78,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: grayscale(0.2);
+    /* filter: grayscale(0.2); */
     opacity: 0.95;
     mix-blend-mode: hard-light;
+    font-size: 10px;
   }
   #grid .card .card-content img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-
-  .white{
-    background-color: white;
-    width: 500px;
-    height: 500px;
   }
