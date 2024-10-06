@@ -31,7 +31,7 @@ export const Content = () => {
 
   return (
     <Container component="main" className={classes.main} maxWidth="md">
-      <div className="container">
+      <div className={classes.heading}>
         <Typography variant="h5" component="h2">
             <TextDecrypt text={`${FirstName} ${LastName}`} />
         </Typography>
@@ -40,7 +40,6 @@ export const Content = () => {
             <TextDecrypt text={`${Resume.basics.job2}`} />
         </Typography>
       </div>
-    
     </Container>
   );
 };

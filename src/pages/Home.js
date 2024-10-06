@@ -12,7 +12,6 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
-import HolographicCards from '../holographicCard/HolographicCards';
 import { ThemeContext } from '../components/theme/ThemeProvider';
 import { useContext } from 'react';
 
@@ -46,11 +45,6 @@ export const Home = () => {
         <Resume />
       </div>
       <SideNavbar />
-      {theme === 'light' ? (
-        <HolographicCards />
-      ) : (
-        <p>hello</p>
-      )}
       <About />
       <Contact />
     </>
